@@ -1,0 +1,124 @@
+/*-------------------------------INICIO: Jefes------------------------------- */
+.mainJefes{
+    @include flex-prop(column,center,center);
+    @include width-height(90%, auto);
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+  
+.contenedorJefes{
+    @include flex-prop(column,center,center);
+    background-color: $fondo-1;
+    border-top: 5px solid $color-3;
+    border-bottom: 5px solid $color-3;
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+    & h2{
+        margin-top: 20px;
+    }
+}
+
+.contenedorFondoColumna2{
+    @extend .contenedorFondoColumna;
+    background-color: $fondo-3;
+
+    & p{
+        background-color: $fondo-1;
+    }
+}
+
+.contenidoJefes{
+    @include flex-prop(column,space-around,center);
+    @include width-height(100%, auto);
+
+    margin-bottom: 20px;
+}
+
+
+
+.contenidoJefes1{
+    @include grid-prop(5,55% 40%);
+    @include width-height(90%,auto);
+    grid-template-areas:
+    "texto1Jefes1 img1Jefes1"
+    "texto2Jefes1 img1Jefes1"
+    "texto3Jefes1 img1Jefes1"
+    "texto4Jefes1 img1Jefes1"
+    "texto5Jefes1 texto5Jefes1";
+    & p{
+        @include selectorJefes5Row(texto1Jefes1,texto2Jefes1,texto3Jefes1,texto4Jefes1,texto5Jefes1);
+    }
+    & img{
+        @include selectorImgJefes(img1Jefes1);
+    }
+    
+}
+.contenidoJefes2{
+    @include grid-prop(4,55% 40%);
+    @include width-height(90%,auto);
+    grid-template-areas:
+    "texto1Jefes2 img1Jefes2"
+    "texto2Jefes2 img1Jefes2"
+    "texto3Jefes2 img1Jefes2"
+    "texto4Jefes2 texto4Jefes2";
+    & p{
+        @include selectorJefes4Row(texto1Jefes2,texto2Jefes2,texto3Jefes2,texto4Jefes2);
+    }
+    & img{
+        @include selectorImgJefes(img1Jefes2);
+    }  
+}
+.contenidoJefes3{
+    @include grid-prop(4,55% 40%);
+    @include width-height(90%,auto);
+    grid-template-areas:
+    "texto1Jefes3 img1Jefes3"
+    "texto2Jefes3 img1Jefes3"
+    "texto3Jefes3 img1Jefes3"
+    "texto4Jefes3 texto4Jefes3";
+    & p{
+        @include selectorJefes4Row(texto1Jefes3,texto2Jefes3,texto3Jefes3,texto4Jefes3);
+    }
+    & img{
+        @include selectorImgJefes(img1Jefes3);
+    }  
+}
+.contenidoJefes4{
+    @include grid-prop(5,55% 40%);
+    @include width-height(90%,auto);
+    grid-template-areas:
+    "texto1Jefes4 img1Jefes4"
+    "texto2Jefes4 img1Jefes4"
+    "texto3Jefes4 img1Jefes4"
+    "texto4Jefes4 texto4Jefes4"
+    "texto5Jefes4 texto5Jefes4";
+    & p{
+        @include selectorJefes5Row(texto1Jefes4,texto2Jefes4,texto3Jefes4,texto4Jefes4,texto5Jefes4);
+    }
+    & img{
+        @include selectorImgJefes(img1Jefes4);
+    }  
+}
+
+.contenidoJefes5{
+    @include grid-prop(4,55% 40%);
+    @include width-height(90%,auto);
+    grid-template-areas:
+    "texto1Jefes5 img1Jefes5"
+    "texto2Jefes5 img1Jefes5"
+    "texto3Jefes5 img1Jefes5"
+    "texto4Jefes5 texto4Jefes5";
+    & p{
+        @include selectorJefes4Row(texto1Jefes5,texto2Jefes5,texto3Jefes5,texto4Jefes5);
+    }
+    & img{
+        @include selectorImgJefes(img1Jefes5);
+    }  
+}
+
+
+/*-------------------------------FINAL: Jefes------------------------------- */

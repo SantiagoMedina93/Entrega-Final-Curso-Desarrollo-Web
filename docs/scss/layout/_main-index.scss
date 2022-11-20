@@ -1,0 +1,224 @@
+.fondoPrincipal, #fondoInicioPaginaPrincipal{
+  @include flex-prop(column,center,center);
+  @include width-height(100%,auto);
+
+  background-image: url(/assets/img/portadaBloodborne.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#paginaInicio{
+  @include flex-prop(column,center,center);
+  @include width-height(100%,auto);
+}
+
+.alineacionVertical1{
+  height: 2.3em;
+  width: auto;
+}
+.alineacionVertical2{
+  height: 12em;
+  width: auto;
+}
+
+.paginaInicio img{
+  display: flex;
+  margin-right: 1em;
+}
+
+#buttonInicio{
+  @include width-height(250px,150px);
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+.contenedorFondo{
+  @include flex-prop(row,center,center);
+  @include width-height(95%,auto);
+
+  margin-bottom: 20px;
+  padding: 15px;
+
+  color: $color-2;
+  font-size: 45px;
+  text-align: justify;
+
+  border-radius: 5px;
+  background-color: $fondo-2;
+
+  & p{
+    color: $color-2;
+    font-size: 25px;
+    text-align: justify;
+    background-color: $fondo-2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  & ul li{
+    color: $color-2;
+  }
+}
+
+.contenedorFondoColumna{
+  @extend .contenedorFondo;
+  flex-direction: column;
+  border: 1px solid $color-3;
+  padding: 10px;
+  margin-bottom: 15px;
+} 
+  
+.titulos{
+  color: $color-2;
+  @include width-height(85%,auto);
+  margin-bottom: 20px;
+  background-color: $fondo-2;
+  
+  font-size: 45px;
+  text-align: center;
+  vertical-align: center;
+
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border-top: 5px solid $color-3;
+  border-bottom: 5px solid $color-3;
+}
+  
+.subTitulos{
+  @extend .titulos;
+  width: 40%;
+  font-size: 25px;
+}
+  
+.videos{
+  display: flex;
+  height: 700px;
+  width: 85%;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}  
+
+
+  
+.mainPaginaPrincipal{
+  @include main-Column();
+}
+
+#paginaPrincipal{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.imagenPaginaPrincipal{
+  @include flex-prop(row,center,center);
+  @include width-height(100%,auto);
+  margin: 0px auto;
+  
+  & img{
+    @include width-height(100%,auto);
+  }
+}
+
+.contenedorCard{
+  @include flex-prop(row,space-between,center);
+  @include width-height(80%,auto);
+
+  & a:link, a:visited, a:active {
+    text-decoration:none;
+  }
+}
+
+
+.card {
+  @include width-height(300px,450px);
+  position: relative;
+
+  background-image: url(/assets/Swag.jpg);
+  
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 15px 15px 50px #adb5bd75;
+  
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in;
+
+  & p {
+    padding-top: 15px;
+    color: $color-3;
+    font-size: 30px;
+    transition: all 0.3s ease-in;
+  }
+}
+
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: none;
+  background-image: url(/assets/portadaBloodborne.jpg);
+  
+  & p{
+    transform: scale(1.5);
+    color: $color-2;
+  }
+}
+
+
+
+
+
+
+.cardHistoria{
+  background-image: url(/assets/img/TarjetasInicio/historia_1.jpg);
+  background-size: cover;
+  grid-area: card1;
+}
+.cardHistoria:hover{
+  background-image: url(/assets/img/TarjetasInicio/historia_2.jpg);
+  background-size: cover; 
+}
+
+.cardEscenarios{
+  background-image: url(/assets/img/TarjetasInicio/escenarios_1.jpg);
+  background-size: cover;
+  
+  grid-area: card2;
+}
+.cardEscenarios:hover{
+  background-image: url(/assets/img/TarjetasInicio/escenarios_2.jpg);
+  background-size: cover;
+  
+}
+
+.cardJefes{
+  background-image: url(/assets/img/TarjetasInicio/jefes_1.jpg);
+  background-size: cover;
+
+  grid-area: card3;
+}
+.cardJefes:hover{
+  background-image: url(/assets/img/TarjetasInicio/jefes_2.jpg);
+  background-size: cover;
+  
+}
+
+.cardProductos{
+  background-image: url(/assets/img/TarjetasInicio/productos_1.jpg);
+  background-size: cover;
+
+  grid-area: card4;
+}
+.cardProductos:hover{
+  background-image: url(/assets/img/TarjetasInicio/productos_2.jpg);
+  background-size: cover;
+  
+}

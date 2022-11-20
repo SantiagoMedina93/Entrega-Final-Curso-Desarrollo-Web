@@ -1,0 +1,1285 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url(/assets/fonts/websymbols/websymbols-regular-webfont.eot);
+  src: url(/assets/fonts//websymbols/websymbols-regular-webfont.eot?#ieclearfix) format("embedded-opentype"), url(/assets/fonts/websymbols/websymbols-regular-webfont.woff) format("woff"), url(/assets/fonts/websymbols/websymbols-regular-webfont.ttf) format("truetype"), url(/assets/fonts//websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*-----------------------INICIO: HEADEAR-----------------------*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: #333;
+  z-index: 1;
+  border-radius: 2px; }
+
+.navL, .navR {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px; }
+
+.navR {
+  padding: 0px; }
+
+.ajusteHorizontalNav {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.navL-Plegable {
+  display: none; }
+
+.menu-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: auto;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+  /* OJO ACA */ }
+  .menu-horizontal > li:hover {
+    background-color: #AB966F;
+    border-radius: 2px; }
+
+.menu-horizontal > li > a {
+  display: block;
+  padding: 10px 20px;
+  color: #f8f9fa;
+  text-decoration: none; }
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  height: auto;
+  width: 200px;
+  background-color: rgba(20, 20, 20, 0.8);
+  padding-left: 0px;
+  /* OJO ACA */ }
+  .menu-vertical > li:hover {
+    background-color: #333;
+    border-radius: 2px; }
+  .menu-vertical li a {
+    display: block;
+    color: #f8f9fa;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+    margin-left: 0px; }
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block; }
+
+.fondoPrincipal, #fondoInicioPaginaPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-image: url(/assets/img/portadaBloodborne.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#paginaInicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%; }
+
+.alineacionVertical1 {
+  height: 2.3em;
+  width: auto; }
+
+.alineacionVertical2 {
+  height: 12em;
+  width: auto; }
+
+.paginaInicio img {
+  display: flex;
+  margin-right: 1em; }
+
+#buttonInicio {
+  height: 150px;
+  width: 250px;
+  background-color: red; }
+
+.contenedorFondo, .contenedorFondoColumna, .contenedorFondoColumna2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 15px;
+  color: #f8f9fa;
+  font-size: 45px;
+  text-align: justify;
+  border-radius: 5px;
+  background-color: #2e2e2e; }
+  .contenedorFondo p, .contenedorFondoColumna p, .contenedorFondoColumna2 p {
+    color: #f8f9fa;
+    font-size: 25px;
+    text-align: justify;
+    background-color: #2e2e2e;
+    padding: 10px;
+    border-radius: 5px; }
+  .contenedorFondo ul li, .contenedorFondoColumna ul li, .contenedorFondoColumna2 ul li {
+    color: #f8f9fa; }
+
+.contenedorFondoColumna, .contenedorFondoColumna2 {
+  flex-direction: column;
+  border: 1px solid #AB966F;
+  padding: 10px;
+  margin-bottom: 15px; }
+
+.titulos, .subTitulos {
+  color: #f8f9fa;
+  height: auto;
+  width: 85%;
+  margin-bottom: 20px;
+  background-color: #2e2e2e;
+  font-size: 45px;
+  text-align: center;
+  vertical-align: center;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border-top: 5px solid #AB966F;
+  border-bottom: 5px solid #AB966F; }
+
+.subTitulos {
+  width: 40%;
+  font-size: 25px; }
+
+.videos {
+  display: flex;
+  height: 700px;
+  width: 85%;
+  margin-bottom: 20px;
+  border-radius: 3px; }
+
+.mainPaginaPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 90%;
+  background-color: rgba(20, 20, 20, 0.8);
+  border-top: 5px solid #AB966F;
+  border-bottom: 5px solid #AB966F;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 20px; }
+
+#paginaPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.imagenPaginaPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin: 0px auto; }
+  .imagenPaginaPrincipal img {
+    height: auto;
+    width: 100%; }
+
+.contenedorCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 80%; }
+  .contenedorCard a:link, .contenedorCard a:visited, .contenedorCard a:active {
+    text-decoration: none; }
+
+.card {
+  height: 450px;
+  width: 300px;
+  position: relative;
+  background-image: url(/assets/Swag.jpg);
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 15px 15px 50px #adb5bd75;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in; }
+  .card p {
+    padding-top: 15px;
+    color: #AB966F;
+    font-size: 30px;
+    transition: all 0.3s ease-in; }
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: none;
+  background-image: url(/assets/portadaBloodborne.jpg); }
+  .card:hover p {
+    transform: scale(1.5);
+    color: #f8f9fa; }
+
+.cardHistoria {
+  background-image: url(/assets/img/TarjetasInicio/historia_1.jpg);
+  background-size: cover;
+  grid-area: card1; }
+
+.cardHistoria:hover {
+  background-image: url(/assets/img/TarjetasInicio/historia_2.jpg);
+  background-size: cover; }
+
+.cardEscenarios {
+  background-image: url(/assets/img/TarjetasInicio/escenarios_1.jpg);
+  background-size: cover;
+  grid-area: card2; }
+
+.cardEscenarios:hover {
+  background-image: url(/assets/img/TarjetasInicio/escenarios_2.jpg);
+  background-size: cover; }
+
+.cardJefes {
+  background-image: url(/assets/img/TarjetasInicio/jefes_1.jpg);
+  background-size: cover;
+  grid-area: card3; }
+
+.cardJefes:hover {
+  background-image: url(/assets/img/TarjetasInicio/jefes_2.jpg);
+  background-size: cover; }
+
+.cardProductos {
+  background-image: url(/assets/img/TarjetasInicio/productos_1.jpg);
+  background-size: cover;
+  grid-area: card4; }
+
+.cardProductos:hover {
+  background-image: url(/assets/img/TarjetasInicio/productos_2.jpg);
+  background-size: cover; }
+
+.mainHistoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 90%;
+  background-color: rgba(20, 20, 20, 0.8);
+  border-top: 5px solid #AB966F;
+  border-bottom: 5px solid #AB966F;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 20px; }
+
+.imgHistoria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .imgHistoria img {
+    border-radius: 4px;
+    height: auto;
+    width: 40%; }
+
+/*-------------------------------INICIO: ESCENARIOS------------------------------- */
+.mainEscenarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 90%;
+  background-color: rgba(20, 20, 20, 0.8);
+  border-top: 5px solid #AB966F;
+  border-bottom: 5px solid #AB966F;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 20px; }
+
+.mapaEscenarios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 75%;
+  position: relative; }
+  .mapaEscenarios img {
+    height: auto;
+    width: 100%;
+    border-radius: 4px; }
+
+#selectorEscenario1 {
+  position: absolute;
+  border-radius: 50%;
+  height: 4%;
+  width: 7%;
+  top: 55%;
+  left: 1.4%;
+  color: red; }
+
+#selectorEscenario2 {
+  position: absolute;
+  border-radius: 50%;
+  height: 5%;
+  width: 5.8%;
+  top: 93.5%;
+  left: 27.5%;
+  color: blue; }
+
+#selectorEscenario3 {
+  position: absolute;
+  border-radius: 50%;
+  height: 5%;
+  width: 6.3%;
+  top: 32.5%;
+  left: 61.2%;
+  color: green; }
+
+#selectorEscenario4 {
+  position: absolute;
+  border-radius: 50%;
+  height: 5%;
+  width: 6.5%;
+  top: 80.5%;
+  left: 87.2%;
+  color: yellow; }
+
+.imagenesEscenarios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 15px; }
+  .imagenesEscenarios img {
+    height: auto;
+    width: 30%;
+    border-radius: 3px; }
+
+#descripcionEscenario1,
+#descripcionEscenario2,
+#descripcionEscenario3,
+#descripcionEscenario4 {
+  display: none; }
+
+/*-------------------------------FINAL: ESCENARIOS------------------------------- */
+/*-------------------------------INICIO: Jefes------------------------------- */
+.mainJefes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 50px; }
+
+.contenedorJefes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(20, 20, 20, 0.8);
+  border-top: 5px solid #AB966F;
+  border-bottom: 5px solid #AB966F;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px; }
+  .contenedorJefes h2 {
+    margin-top: 20px; }
+
+.contenedorFondoColumna2 {
+  background-color: rgba(10, 10, 10, 0.6); }
+  .contenedorFondoColumna2 p {
+    background-color: rgba(20, 20, 20, 0.8); }
+
+.contenidoJefes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.contenidoJefes1 {
+  display: grid;
+  grid-template-rows: 5;
+  grid-template-columns: 55% 40%;
+  height: auto;
+  width: 90%;
+  grid-template-areas: "texto1Jefes1 img1Jefes1"
+ "texto2Jefes1 img1Jefes1"
+ "texto3Jefes1 img1Jefes1"
+ "texto4Jefes1 img1Jefes1"
+ "texto5Jefes1 texto5Jefes1"; }
+  .contenidoJefes1 p {
+    padding: 10px; }
+    .contenidoJefes1 p:nth-child(1) {
+      grid-area: texto1Jefes1;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes1 p:nth-child(2) {
+      grid-area: texto2Jefes1;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes1 p:nth-child(3) {
+      grid-area: texto3Jefes1;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes1 p:nth-child(4) {
+      grid-area: texto4Jefes1;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes1 p:nth-child(5) {
+      grid-area: texto5Jefes1;
+      width: 100%;
+      align-self: center; }
+  .contenidoJefes1 img {
+    grid-area: img1Jefes1;
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 4px;
+    margin: 15px; }
+
+.contenidoJefes2 {
+  display: grid;
+  grid-template-rows: 4;
+  grid-template-columns: 55% 40%;
+  height: auto;
+  width: 90%;
+  grid-template-areas: "texto1Jefes2 img1Jefes2"
+ "texto2Jefes2 img1Jefes2"
+ "texto3Jefes2 img1Jefes2"
+ "texto4Jefes2 texto4Jefes2"; }
+  .contenidoJefes2 p {
+    padding: 10px; }
+    .contenidoJefes2 p:nth-child(1) {
+      grid-area: texto1Jefes2;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes2 p:nth-child(2) {
+      grid-area: texto2Jefes2;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes2 p:nth-child(3) {
+      grid-area: texto3Jefes2;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes2 p:nth-child(4) {
+      grid-area: texto4Jefes2;
+      width: 100%;
+      align-self: center; }
+  .contenidoJefes2 img {
+    grid-area: img1Jefes2;
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 4px;
+    margin: 15px; }
+
+.contenidoJefes3 {
+  display: grid;
+  grid-template-rows: 4;
+  grid-template-columns: 55% 40%;
+  height: auto;
+  width: 90%;
+  grid-template-areas: "texto1Jefes3 img1Jefes3"
+ "texto2Jefes3 img1Jefes3"
+ "texto3Jefes3 img1Jefes3"
+ "texto4Jefes3 texto4Jefes3"; }
+  .contenidoJefes3 p {
+    padding: 10px; }
+    .contenidoJefes3 p:nth-child(1) {
+      grid-area: texto1Jefes3;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes3 p:nth-child(2) {
+      grid-area: texto2Jefes3;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes3 p:nth-child(3) {
+      grid-area: texto3Jefes3;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes3 p:nth-child(4) {
+      grid-area: texto4Jefes3;
+      width: 100%;
+      align-self: center; }
+  .contenidoJefes3 img {
+    grid-area: img1Jefes3;
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 4px;
+    margin: 15px; }
+
+.contenidoJefes4 {
+  display: grid;
+  grid-template-rows: 5;
+  grid-template-columns: 55% 40%;
+  height: auto;
+  width: 90%;
+  grid-template-areas: "texto1Jefes4 img1Jefes4"
+ "texto2Jefes4 img1Jefes4"
+ "texto3Jefes4 img1Jefes4"
+ "texto4Jefes4 texto4Jefes4"
+ "texto5Jefes4 texto5Jefes4"; }
+  .contenidoJefes4 p {
+    padding: 10px; }
+    .contenidoJefes4 p:nth-child(1) {
+      grid-area: texto1Jefes4;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes4 p:nth-child(2) {
+      grid-area: texto2Jefes4;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes4 p:nth-child(3) {
+      grid-area: texto3Jefes4;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes4 p:nth-child(4) {
+      grid-area: texto4Jefes4;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes4 p:nth-child(5) {
+      grid-area: texto5Jefes4;
+      width: 100%;
+      align-self: center; }
+  .contenidoJefes4 img {
+    grid-area: img1Jefes4;
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 4px;
+    margin: 15px; }
+
+.contenidoJefes5 {
+  display: grid;
+  grid-template-rows: 4;
+  grid-template-columns: 55% 40%;
+  height: auto;
+  width: 90%;
+  grid-template-areas: "texto1Jefes5 img1Jefes5"
+ "texto2Jefes5 img1Jefes5"
+ "texto3Jefes5 img1Jefes5"
+ "texto4Jefes5 texto4Jefes5"; }
+  .contenidoJefes5 p {
+    padding: 10px; }
+    .contenidoJefes5 p:nth-child(1) {
+      grid-area: texto1Jefes5;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes5 p:nth-child(2) {
+      grid-area: texto2Jefes5;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes5 p:nth-child(3) {
+      grid-area: texto3Jefes5;
+      width: 100%;
+      align-self: center; }
+    .contenidoJefes5 p:nth-child(4) {
+      grid-area: texto4Jefes5;
+      width: 100%;
+      align-self: center; }
+  .contenidoJefes5 img {
+    grid-area: img1Jefes5;
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 4px;
+    margin: 15px; }
+
+/*-------------------------------FINAL: Jefes------------------------------- */
+.button {
+  display: inline-block;
+  height: 20px;
+  width: 50px;
+  margin-top: 18px;
+  background-color: black;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 0; }
+
+#toggle {
+  display: none; }
+
+.slider {
+  display: block;
+  font-size: 10px;
+  position: relative; }
+
+.slider::after {
+  content: 'ON';
+  height: 25px;
+  width: 25px;
+  background-color: #AB966F;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: -5px;
+  left: 0;
+  display: grid;
+  place-content: center;
+  line-height: 0;
+  transition: background-color .25s, transform .25s ease-in; }
+
+#toggle:checked + .slider::after {
+  content: 'OFF';
+  background-color: #AB966F;
+  transform: translateX(25px) rotate(360deg); }
+
+.textInputWrapper {
+  position: relative;
+  height: auto;
+  width: 180px;
+  width: 180px;
+  margin: 8px auto;
+  margin-right: 10px;
+  --accent-color: $color-3; }
+
+.textInputWrapper:before {
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42); }
+
+.textInputWrapper:before,
+.textInputWrapper:after {
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  bottom: -1px;
+  z-index: 4;
+  width: 100%; }
+
+.textInputWrapper:focus-within:before {
+  border-bottom: 1px solid var(--accent-color); }
+
+.textInputWrapper:before {
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42); }
+
+.textInputWrapper:focus-within:before {
+  border-bottom: 1px solid var(--accent-color);
+  transform: scaleX(1); }
+
+.textInputWrapper:focus-within:after {
+  border-bottom: 2px solid var(--accent-color);
+  transform: scaleX(1); }
+
+.textInputWrapper:after {
+  content: "";
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  will-change: transform;
+  border-bottom: 2px solid var(--accent-color);
+  border-bottom-color: var(--accent-color); }
+
+.textInput::placeholder {
+  transition: opacity 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  opacity: 1;
+  user-select: none;
+  color: rgba(255, 255, 255, 0.582); }
+
+.textInputWrapper .textInput {
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0px 2px 5px rgba(35, 35, 35, 0.3);
+  max-height: 36px;
+  background-color: #252525;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 200ms;
+  transition-property: background-color;
+  color: #e8e8e8;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px;
+  width: 100%;
+  border-left: none;
+  border-bottom: none;
+  border-right: none; }
+
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+  outline: none; }
+
+.textInputWrapper:focus-within .textInput,
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+  background-color: rgba(20, 20, 20, 0.8); }
+
+.textInputWrapper:focus-within .textInput::placeholder {
+  opacity: 0; }
+
+/*-----------------------FINAL: HEADEAR-----------------------*/
+/*-----------------------INICIO: ButtonFOOTER-----------------------*/
+.buttonContactoFooter {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #333;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color); }
+
+.buttonContactoFooter a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #AB966F; }
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease; }
+
+.buttonContactoFooter:hover .button_top {
+  transform: translateY(-0.33em); }
+
+.buttonContactoFooter:active .button_top {
+  transform: translateY(0); }
+
+/*-----------------------FINAL: ButtonFOOTER-----------------------*/
+/*-----------------------INICIO: ButtonPRODUCTOS-----------------------*/
+.buttonProductos {
+  color: #090909;
+  padding: 8px 4px;
+  margin: 5px;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #c5c5c5;
+  transition: all .3s; }
+
+.buttonProductos:hover {
+  box-shadow: 3px 3px 12px #AB966F,
+ -3px -3px 12px #AB966F; }
+
+.buttonProductos:active {
+  box-shadow: 3px 3px 12px #c5c5c5,
+ -3px -3px 12px #ffffff; }
+
+/*-----------------------FINAL: ButtonPRODUCTOS-----------------------*/
+.mainProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 90%;
+  background-color: rgba(20, 20, 20, 0.8);
+  border-top: 5px solid #AB966F;
+  border-bottom: 5px solid #AB966F;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 20px; }
+
+.asideProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 70%;
+  align-items: center;
+  border: 1px solid #AB966F; }
+  .asideProductos ul {
+    margin-bottom: 0px; }
+
+.listaAsideProductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px;
+  list-style: none; }
+  .listaAsideProductos li a:link, .listaAsideProductos a:visited, .listaAsideProductos a:active {
+    text-decoration: none;
+    color: white; }
+
+.contenedorCard a:link, a:visited, a:active {
+  text-decoration: none; }
+
+.articuloProductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  width: auto;
+  flex-wrap: wrap;
+  margin-bottom: 20px; }
+  .articuloProductos p {
+    color: #090909;
+    background-color: #e8e8e8;
+    font-size: 18px; }
+  .articuloProductos a:link, .articuloProductos a:visited, .articuloProductos a:active {
+    text-decoration: none; }
+
+.contenedorProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 220px;
+  width: 180px;
+  border-radius: 15px;
+  margin: 15px;
+  background-color: #e8e8e8;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+  .contenedorProductos figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px; }
+  .contenedorProductos figure img {
+    height: auto;
+    width: 75%;
+    border-bottom: 2px solid gray;
+    padding: 5px; }
+
+#producto1, #producto2, #producto3,
+#producto4, #producto5, #producto6,
+#producto7, #producto8, #producto9,
+#producto10, #producto11, #producto12 {
+  display: flex; }
+
+.imgAlterada figure img {
+  width: 85%; }
+
+.imgAlterada div p {
+  margin-top: 15px; }
+
+/*-------------------------------INICIO: FOOTER------------------------------- */
+.footer {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 15% 40% 45%;
+  grid-template-areas: "redesSociales  otrosJuegos  contacto";
+  border-top: 5px solid #AB966F;
+  border-bottom: 5px solid #AB966F;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  height: auto;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.8); }
+
+.otrosJuegosFooter {
+  grid-area: otrosJuegos;
+  justify-self: flex-end;
+  display: grid;
+  grid-template-rows: 15% 85%;
+  grid-template-columns: 1;
+  grid-template-areas: "tituloOtrosJuegos"
+ "informacionOtrosJuegos";
+  height: auto;
+  width: 90%;
+  margin-top: 20px; }
+  .otrosJuegosFooter h2 {
+    grid-area: tituloOtrosJuegos;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10px; }
+
+.carouselOtrosJuegos {
+  grid-area: informacionOtrosJuegos; }
+
+.contactoFooter {
+  grid-area: contacto;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 15% 85%;
+  grid-template-columns: 1;
+  grid-template-areas: "tituloContacto"
+ "informacionContacto";
+  height: auto;
+  width: 90%;
+  margin-top: 20px; }
+  .contactoFooter h2 {
+    grid-area: tituloContacto;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10px; }
+  .contactoFooter h3 {
+    color: #f8f9fa;
+    text-align: justify;
+    font-size: 25px; }
+
+.informacionContacto {
+  grid-area: informacionContacto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px; }
+
+.redesSociales {
+  grid-area: redesSociales;
+  justify-self: flex-end;
+  display: grid;
+  grid-template-rows: 15% 85%;
+  grid-template-columns: 100%;
+  grid-template-areas: "tituloRedesSociales"
+ "informacionRedesSociales";
+  height: auto;
+  width: 90%;
+  margin-top: 20px; }
+  .redesSociales h2 {
+    grid-area: tituloRedesSociales;
+    justify-self: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.social {
+  grid-area: informacionRedesSociales;
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: 100%;
+  grid-template-areas: "twitter"
+ "facebook"
+ "youtube";
+  height: auto;
+  width: 100%; }
+  .social a {
+    display: block;
+    color: #AB966F;
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+
+.twitter {
+  grid-area: twitter; }
+  .twitter a {
+    color: #AB966F; }
+
+.facebook {
+  grid-area: facebook; }
+
+.youtube {
+  grid-area: youtube; }
+
+.social .overlay {
+  display: block;
+  height: 20px;
+  padding: 5px;
+  margin-left: 70px;
+  margin-top: -52px;
+  font-weight: bold;
+  position: absolute;
+  transform: translateX(-80%);
+  opacity: 0;
+  transition: all 300ms; }
+
+.social div:hover .overlay {
+  opacity: 1;
+  transform: translateX(0%); }
+
+.icon {
+  font-family: "WebSymbolsRegular";
+  font-size: 35px; }
+  .icon a {
+    color: #AB966F; }
+
+/*-------------------------------FINAL: FOOTER------------------------------- */
+@media (max-width: 1800px) {
+  .card {
+    width: 200px;
+    height: 300px; }
+  .card p {
+    font-size: 22px; }
+  /*---------- IN: JEFES ----------*/
+  .contenidoJefes1 {
+    grid-template-areas: "texto1Jefes1 img1Jefes1"
+ "texto2Jefes1 img1Jefes1"
+ "texto3Jefes1 img1Jefes1"
+ "texto4Jefes1 texto4Jefes1"
+ "texto5Jefes1 texto5Jefes1"; }
+  .contenidoJefes2 {
+    grid-template-areas: "texto1Jefes2 img1Jefes2"
+ "texto2Jefes2 img1Jefes2"
+ "texto3Jefes2 texto3Jefes2"
+ "texto4Jefes2 texto4Jefes2"; }
+  .contenidoJefes3 {
+    grid-template-areas: "texto1Jefes3 img1Jefes3"
+ "texto2Jefes3 img1Jefes3"
+ "texto3Jefes3 texto3Jefes3"
+ "texto4Jefes3 texto4Jefes3"; }
+  .contenidoJefes4 {
+    grid-template-areas: "texto1Jefes4 img1Jefes4"
+ "texto2Jefes4 img1Jefes4"
+ "texto3Jefes4 texto3Jefes4"
+ "texto4Jefes4 texto4Jefes4"
+ "texto5Jefes4 texto5Jefes4"; }
+  /*---------- FN: JEFES ----------*/ }
+
+@media (max-width: 1500px) {
+  /*---------- IN: JEFES ----------*/
+  .contenidoJefes1 {
+    grid-template-areas: "texto1Jefes1 img1Jefes1"
+ "texto2Jefes1 img1Jefes1"
+ "texto3Jefes1 texto3Jefes1"
+ "texto4Jefes1 texto4Jefes1"
+ "texto5Jefes1 texto5Jefes1"; }
+  .contenidoJefes2 {
+    grid-template-areas: "texto1Jefes2 img1Jefes2"
+ "texto2Jefes2 texto2Jefes2"
+ "texto3Jefes2 texto3Jefes2"
+ "texto4Jefes2 texto4Jefes2"; }
+  .contenidoJefes3 {
+    grid-template-areas: "texto1Jefes3 img1Jefes3"
+ "texto2Jefes3 texto2Jefes3"
+ "texto3Jefes3 texto3Jefes3"
+ "texto4Jefes3 texto4Jefes3"; }
+  .contenidoJefes4 {
+    grid-template-areas: "texto1Jefes4 img1Jefes4"
+ "texto2Jefes4 texto2Jefes4"
+ "texto3Jefes4 texto3Jefes4"
+ "texto4Jefes4 texto4Jefes4"
+ "texto5Jefes4 texto5Jefes4"; }
+  .contenidoJefes5 {
+    grid-template-areas: "texto1Jefes5 img1Jefes5"
+ "texto2Jefes5 img1Jefes5"
+ "texto3Jefes5 texto3Jefes5"
+ "texto4Jefes5 texto4Jefes5"; }
+  /*---------- FN: JEFES ----------*/ }
+
+@media (max-width: 1380px) {
+  /*---------- IN: FOOTER ----------*/
+  .otrosJuegosFooter h2 {
+    font-size: 35px; }
+  /*---------- FN: FOOTER ----------*/
+  /*---------- IN: JEFES ----------*/
+  .contenidoJefes1 {
+    grid-template-areas: "texto1Jefes1 img1Jefes1"
+ "texto2Jefes1 texto2Jefes1"
+ "texto3Jefes1 texto3Jefes1"
+ "texto4Jefes1 texto4Jefes1"
+ "texto5Jefes1 texto5Jefes1"; }
+  .contenidoJefes2 {
+    grid-template-rows: 5;
+    grid-template-areas: "texto1Jefes2 texto1Jefes2"
+ "img1Jefes2 img1Jefes2"
+ "texto2Jefes2 texto2Jefes2"
+ "texto3Jefes2 texto3Jefes2"
+ "texto4Jefes2 texto4Jefes2"; }
+  .contenidoJefes3 {
+    grid-template-rows: 5;
+    grid-template-areas: "texto1Jefes3 texto1Jefes3"
+ "img1Jefes3 img1Jefes3"
+ "texto2Jefes3 texto2Jefes3"
+ "texto3Jefes3 texto3Jefes3"
+ "texto4Jefes3 texto4Jefes3"; }
+  /*---------- FN: JEFES ----------*/ }
+
+@media (max-width: 1230px) {
+  /*---------- IN: HEADER ----------*/
+  .navL, .navR {
+    font-size: 15px; }
+  .menu-horizontal > li > a {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .navR {
+    font-size: 15px; }
+  .menu-horizontal > li > a {
+    padding: 15px; }
+  /*---------- FN: HEADER ----------*/
+  /*---------- FN: FOOTER ----------*/
+  .footer {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "redesSociales  otrosJuegos "
+ "contacto contacto"; }
+  .otrosJuegosFooter {
+    grid-area: otrosJuegos;
+    justify-self: center; }
+  .contactoFooter {
+    width: 93%; }
+  /*---------- FN: FOOTER ----------*/
+  /*---------- IN: INICIO ----------*/
+  .card {
+    width: 150px;
+    height: 225px; }
+  .card p {
+    font-size: 20px; }
+  .card:hover p {
+    transform: scale(1.2);
+    color: #f8f9fa; }
+  /*---------- FN: INICIO ----------*/
+  /*---------- IN: CLASES ----------*/
+  .contenedorFondo, .contenedorFondoColumna, .contenedorFondoColumna2, .contenedorFondoColumna, .contenedorFondoColumna2, .contenidoJefes p {
+    font-size: 18px; }
+  .titulos, .subTitulos, .subTitulos {
+    font-size: 35px; }
+  .videos {
+    height: 400px; }
+  /*---------- FN: CLASES ----------*/
+  /*---------- IN: ESCENARIOS ----------*/
+  #selectorEscenario1 {
+    height: 4%;
+    width: 12%;
+    top: 90%;
+    left: 69%; }
+  #selectorEscenario2 {
+    height: 5%;
+    width: 8.8%;
+    top: 58%;
+    left: 87.8%; }
+  #selectorEscenario3 {
+    height: 5%;
+    width: 8.3%;
+    top: 10.5%;
+    left: 34%; }
+  #selectorEscenario4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* border: 1px solid yellow; */
+    border-radius: 50%;
+    height: 5%;
+    width: 9.5%;
+    top: 7%;
+    left: 10.5%; }
+  /*---------- FN: ESCENARIOS ----------*/ }
+
+@media (max-width: 992px) {
+  /*---------- IN: HEADER ----------*/
+  .navL-Plegable {
+    display: flex; }
+  .navL, .navR {
+    display: none; }
+  /*---------- FN: HEADER ----------*/
+  /*---------- IN: INICIO ----------*/
+  .contenedorCard {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "card1  card2"
+ "card3  card4"; }
+  .contenedorCard a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  /*---------- FN: INICIO ----------*/
+  /*---------- IN: HISTORIA ----------*/
+  .imgHistoria {
+    flex-direction: column; }
+  .imgHistoria img {
+    width: 90%;
+    margin-bottom: 15px; }
+  /*---------- IN: HISTORIA ----------*/
+  /*---------- IN: CLASES ----------*/
+  .contenedorFondo, .contenedorFondoColumna, .contenedorFondoColumna2, .contenedorFondoColumna, .contenedorFondoColumna2, .contenidoJefes p {
+    font-size: 15px; }
+  .titulos, .subTitulos, .subTitulos {
+    font-size: 30px; }
+  .videos {
+    height: 350px; }
+  /*---------- FN: CLASES ----------*/
+  /*---------- IN: JEFES ----------*/
+  .contenidoJefes1 {
+    grid-template-rows: 6;
+    grid-template-areas: "texto1Jefes1 texto1Jefes1"
+ "img1Jefes1 img1Jefes1"
+ "texto2Jefes1 texto2Jefes1"
+ "texto3Jefes1 texto3Jefes1"
+ "texto4Jefes1 texto4Jefes1"
+ "texto5Jefes1 texto5Jefes1"; }
+  .contenidoJefes1 img {
+    margin: 10px; }
+  .contenidoJefes4 {
+    grid-template-rows: 6;
+    grid-template-areas: "texto1Jefes4 texto1Jefes4"
+ "img1Jefes4 img1Jefes4"
+ "texto2Jefes4 texto2Jefes4"
+ "texto3Jefes4 texto3Jefes4"
+ "texto4Jefes4 texto4Jefes4"
+ "texto5Jefes4 texto5Jefes4"; }
+  .contenidoJefes5 {
+    grid-template-areas: "texto1Jefes5 img1Jefes5"
+ "texto2Jefes5 texto2Jefes5"
+ "texto3Jefes5 texto3Jefes5"
+ "texto4Jefes5 texto4Jefes5"; }
+  /*---------- FN: JEFES ----------*/ }
+
+@media (max-width: 768px) {
+  /*---------- IN: HISTORIA ----------*/
+  .contenedorFondo, .contenedorFondoColumna, .contenedorFondoColumna2, .contenedorFondoColumna, .contenedorFondoColumna2, .contenidoJefes p {
+    font-size: 12px; }
+  .titulos, .subTitulos, .subTitulos {
+    font-size: 20px;
+    padding-bottom: 5px; }
+  .videos {
+    height: 300px; }
+  /*---------- IN: HISTORIA ----------*/
+  /*---------- IN: JEFES ----------*/
+  .contenidoJefes5 {
+    grid-template-rows: 5;
+    grid-template-areas: "texto1Jefes5 texto1Jefes5"
+ "img1Jefes5 img1Jefes5"
+ "texto2Jefes5 texto2Jefes5"
+ "texto3Jefes5 texto3Jefes5"
+ "texto4Jefes5 texto4Jefes5"; }
+  /*---------- FN: JEFES ----------*/ }
+
+@media (max-width: 715px) {
+  /*---------- IN: PRODUCTOS ----------*/
+  .articuloProductos {
+    width: 85%; }
+  .contenedorProductos {
+    width: 270px;
+    height: 330px; }
+  /*---------- FN: PRODUCTOS ----------*/
+  /*---------- FN: HEADER ----------*/
+  .footer {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 100%;
+    grid-template-areas: "redesSociales"
+ "otrosJuegos "
+ "contacto"; }
+  .otrosJuegosFooter h2 {
+    font-size: 20px; }
+  .redesSociales {
+    justify-self: center; }
+  .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.2); }
+  /*---------- FN: HEADER ----------*/ }

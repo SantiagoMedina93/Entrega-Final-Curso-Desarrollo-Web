@@ -1,0 +1,54 @@
+/*-------------------------------INICIO: ESCENARIOS------------------------------- */
+.mainEscenarios{
+    @include main-Column();
+}
+
+.mapaEscenarios{
+    @include flex-prop(row,space-around,center);
+    @include width-height(75%,auto);
+    position: relative;
+    & img{
+        @include width-height(100%,auto);
+        border-radius: 4px;
+    }
+}
+
+#selectorEscenario1{
+    @include selector-escenarios(4%,7%,55%,1.4%);
+    color: red;
+}
+
+#selectorEscenario2{
+    @include selector-escenarios(5%,5.8%,93.5%,27.5%);
+    color: blue;
+}
+
+#selectorEscenario3{
+    @include selector-escenarios(5%,6.3%,32.5%,61.2%);
+    color: green;
+}
+
+#selectorEscenario4{
+    @include selector-escenarios(5%,6.5%,80.5%,87.2%);
+    color: yellow;
+}
+
+.imagenesEscenarios{
+    @include flex-prop(row,space-evenly,center);
+    margin-bottom: 15px;
+    & img{
+        @include width-height(30%,auto);
+        border-radius: 3px;
+    }
+}
+
+#descripcionEscenario1,
+#descripcionEscenario2,
+#descripcionEscenario3,
+#descripcionEscenario4{
+    display: none;
+}
+
+
+
+/*-------------------------------FINAL: ESCENARIOS------------------------------- */

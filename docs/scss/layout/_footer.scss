@@ -1,0 +1,155 @@
+/*-------------------------------INICIO: FOOTER------------------------------- */
+.footer{
+    @include grid-prop(1, 15% 40% 45%);
+    grid-template-areas: 
+    "redesSociales  otrosJuegos  contacto";
+  
+    border-top: 5px solid $color-3;
+    border-bottom: 5px solid $color-3;
+
+    margin: 0px auto;
+    margin-bottom: 30px;
+    
+    @include width-height(100%,auto);
+    background-color: $fondo-1;
+  }
+  
+  
+.otrosJuegosFooter{
+    grid-area: otrosJuegos;
+    justify-self: flex-end;
+    @include grid-prop(15% 85%,1);
+
+    grid-template-areas: 
+    "tituloOtrosJuegos"
+    "informacionOtrosJuegos";
+  
+    @include width-height(90%,auto);
+    margin-top: 20px;
+    & h2{
+        grid-area: tituloOtrosJuegos;
+
+        justify-self: center;
+        align-self: center;
+        margin-top: 10px;
+    }
+}
+.carouselOtrosJuegos{
+    grid-area: informacionOtrosJuegos;
+}
+
+
+
+.contactoFooter{
+    grid-area: contacto;
+    justify-self: center;
+    @include grid-prop(15% 85%,1);
+    grid-template-areas: 
+    "tituloContacto"
+    "informacionContacto";
+    
+    @include width-height(90%,auto);
+    margin-top: 20px;
+    & h2{
+        grid-area: tituloContacto;
+
+        justify-self: center;
+        align-self: center;
+        margin-top: 10px;
+    }
+    & h3{
+        color: $color-2;
+        text-align: justify;
+        font-size: 25px;
+    }
+}
+.informacionContacto{
+    grid-area: informacionContacto;
+    @include flex-prop(column,center,center);
+    font-size: 18px;
+}
+
+
+.redesSociales{
+    grid-area: redesSociales;
+    justify-self: flex-end;
+    @include grid-prop(15% 85%, 100%);
+
+    grid-template-areas: 
+    "tituloRedesSociales"
+    "informacionRedesSociales";
+    @include width-height(90%,auto);
+    margin-top: 20px;
+    & h2{
+        grid-area: tituloRedesSociales;
+
+        justify-self: center;
+        align-self: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.social{
+    grid-area: informacionRedesSociales;
+
+    @include grid-prop(3,100%);
+    grid-template-areas: 
+    "twitter"
+    "facebook"
+    "youtube";
+    
+    @include width-height(100%,auto);
+    & a{
+        display: block;
+        color: $color-3;
+        text-decoration: none;
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+.twitter{
+    grid-area: twitter;
+    & a{
+        color: $color-3;         
+    }
+}
+.facebook{
+    grid-area: facebook;
+}
+.youtube{
+    grid-area: youtube;
+}
+  
+.social .overlay{
+    display: block;
+    height: 20px;
+    
+    padding: 5px;
+    margin-left: 70px;
+    margin-top: -52px;
+    
+    
+    font-weight: bold;
+    position: absolute;
+    
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 300ms;
+}
+.social div:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%);
+    
+}
+.icon{
+    font-family: "WebSymbolsRegular";
+    font-size: 35px;
+    & a{
+        color: $color-3;
+    }
+}
+
+/*-------------------------------FINAL: FOOTER------------------------------- */

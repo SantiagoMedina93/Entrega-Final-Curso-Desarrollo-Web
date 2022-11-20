@@ -1,0 +1,44 @@
+@media (max-width: 715px){
+
+    /*---------- IN: PRODUCTOS ----------*/
+
+    .articuloProductos{
+        width: 85%;
+    }
+    
+    .contenedorProductos{
+        width: 270px;
+        height: 330px;
+    }
+
+
+    /*---------- FN: PRODUCTOS ----------*/
+
+    /*---------- FN: HEADER ----------*/
+    .footer{
+        display: grid;
+        grid-template-rows: 1;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "redesSociales"
+        "otrosJuegos "
+        "contacto";
+    }
+    .otrosJuegosFooter h2{
+        font-size: 20px;
+    }
+    .redesSociales{
+        justify-self: center;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1.2);
+    }
+
+    
+    /*---------- FN: HEADER ----------*/
+}

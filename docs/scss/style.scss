@@ -1,0 +1,25 @@
+@import "./base/reset";
+@import "./base/typo";
+@import "./utilities/variable";
+@import "./utilities/mixins";
+
+
+
+
+
+
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/historia";
+@import "./layout/escenarios";
+@import "./layout/jefes";
+@import "./components/button";
+@import "./layout/productos";
+@import "./layout/footer";
+@import "./layout/max-width-1800px.scss";
+@import "./layout/max-width-1500px.scss";
+@import "./layout/max-width-1380px.scss";
+@import "./layout/max-width-1230px.scss";
+@import "./layout/max-width-992px.scss";
+@import "./layout/max-width-768px.scss";
+@import "./layout/max-width-715px.scss";

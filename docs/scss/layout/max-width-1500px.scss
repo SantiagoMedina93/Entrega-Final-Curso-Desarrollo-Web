@@ -1,0 +1,43 @@
+@media (max-width: 1500px){
+    /*---------- IN: JEFES ----------*/
+    .contenidoJefes1{
+        grid-template-areas:
+        "texto1Jefes1 img1Jefes1"
+        "texto2Jefes1 img1Jefes1"
+        "texto3Jefes1 texto3Jefes1"
+        "texto4Jefes1 texto4Jefes1"
+        "texto5Jefes1 texto5Jefes1";
+    }
+    .contenidoJefes2{
+        grid-template-areas:
+        "texto1Jefes2 img1Jefes2"
+        "texto2Jefes2 texto2Jefes2"
+        "texto3Jefes2 texto3Jefes2"
+        "texto4Jefes2 texto4Jefes2";
+    }
+    .contenidoJefes3{
+        grid-template-areas:
+        "texto1Jefes3 img1Jefes3"
+        "texto2Jefes3 texto2Jefes3"
+        "texto3Jefes3 texto3Jefes3"
+        "texto4Jefes3 texto4Jefes3";
+    }
+
+    .contenidoJefes4{
+        grid-template-areas:
+        "texto1Jefes4 img1Jefes4"
+        "texto2Jefes4 texto2Jefes4"
+        "texto3Jefes4 texto3Jefes4"
+        "texto4Jefes4 texto4Jefes4"
+        "texto5Jefes4 texto5Jefes4";
+      }
+
+    .contenidoJefes5{
+        grid-template-areas:
+        "texto1Jefes5 img1Jefes5"
+        "texto2Jefes5 img1Jefes5"
+        "texto3Jefes5 texto3Jefes5"
+        "texto4Jefes5 texto4Jefes5";
+      }
+    /*---------- FN: JEFES ----------*/
+}

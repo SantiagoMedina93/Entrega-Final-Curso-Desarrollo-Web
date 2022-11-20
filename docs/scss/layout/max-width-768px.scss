@@ -1,0 +1,27 @@
+@media (max-width: 768px){
+
+    /*---------- IN: HISTORIA ----------*/
+    .contenedorFondo, .contenedorFondoColumna, .contenidoJefes p{
+        font-size: 12px;
+    }
+    .titulos, .subTitulos{
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    .videos{
+        height: 300px;
+    }
+    /*---------- IN: HISTORIA ----------*/
+
+    /*---------- IN: JEFES ----------*/
+    .contenidoJefes5{
+        grid-template-rows: 5;
+        grid-template-areas:
+        "texto1Jefes5 texto1Jefes5"
+        "img1Jefes5 img1Jefes5"
+        "texto2Jefes5 texto2Jefes5"
+        "texto3Jefes5 texto3Jefes5"
+        "texto4Jefes5 texto4Jefes5";
+      }
+    /*---------- FN: JEFES ----------*/
+}

@@ -1,0 +1,105 @@
+@mixin flex-prop($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid-prop($rows, $columns){
+    display: grid;
+    grid-template-rows: $rows;
+    grid-template-columns: $columns;
+}
+
+@mixin width-height($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin main-Column(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: auto;
+    width: 90%;
+    background-color: $fondo-1;
+    border-top: 5px solid $color-3;
+    border-bottom: 5px solid $color-3;
+    
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+      
+}
+
+@mixin selector-escenarios($height, $width, $top, $left) {
+    position: absolute;
+    border-radius: 50%;
+    height: $height;
+    width: $width;
+    top: $top;
+    left: $left;
+    
+}
+
+@mixin selectorImgJefes($img) {
+    grid-area: $img;
+    width: 95%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 4px;
+    margin: 15px;
+}
+@mixin selectorJefes5Row ($texto1, $texto2, $texto3, $texto4, $texto5){
+    padding: 10px;
+    &:nth-child(1){
+        grid-area: $texto1;
+        width: 100%;
+        align-self: center;
+    }
+    &:nth-child(2){
+        grid-area: $texto2;
+        width: 100%;
+        align-self: center;
+    }
+    &:nth-child(3){
+        grid-area: $texto3;
+        width: 100%;
+        align-self: center;
+    }
+    &:nth-child(4){
+        grid-area: $texto4;
+        width: 100%;
+        align-self: center;
+    }
+    &:nth-child(5){
+        grid-area: $texto5;
+        width: 100%;
+        align-self: center;
+    }
+}
+@mixin selectorJefes4Row ($texto1, $texto2, $texto3, $texto4){
+    padding: 10px;
+    &:nth-child(1){
+        grid-area: $texto1;
+        width: 100%;
+        align-self: center;
+    }
+    &:nth-child(2){
+        grid-area: $texto2;
+        width: 100%;
+        align-self: center;
+    }
+    &:nth-child(3){
+        grid-area: $texto3;
+        width: 100%;
+        align-self: center;
+    }
+    &:nth-child(4){
+        grid-area: $texto4;
+        width: 100%;
+        align-self: center;
+    }
+}

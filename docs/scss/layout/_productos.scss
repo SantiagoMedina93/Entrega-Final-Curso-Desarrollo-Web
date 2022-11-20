@@ -1,0 +1,83 @@
+.mainProductos{
+    @include main-Column();
+}
+
+.asideProductos{
+    @include flex-prop(column,center,center);
+    @include width-height(70%,auto);
+    align-items: center;
+    border: 1px solid $color-3;
+  
+    & ul{
+        margin-bottom: 0px;
+    }
+}
+
+.listaAsideProductos{
+    @include flex-prop(row,center,center);
+    flex-wrap: wrap;
+    
+    padding: 0px;
+    list-style: none;
+
+    & li a:link, a:visited, a:active {
+        text-decoration:none;
+        color: white;
+    }
+}
+
+
+.contenedorCard a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.articuloProductos{
+    @include flex-prop(row,space-evenly,center);
+    @include width-height(auto,auto);
+    flex-wrap: wrap;
+  
+    margin-bottom: 20px;
+    & p{
+        color: $color-4;
+        background-color: #e8e8e8;
+        font-size: 18px;
+    }
+    & a:link, a:visited, a:active {
+        text-decoration:none;
+    }
+}
+  
+.contenedorProductos{
+    @include flex-prop(column,space-evenly,center);
+    @include width-height(180px,220px);
+    border-radius: 15px;
+    
+    margin: 15px;
+
+    background-color: #e8e8e8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    & figure{
+        @include flex-prop(row,center,center);
+        margin-bottom: 5px;
+    }
+    & figure img{
+        @include width-height(75%,auto);
+        border-bottom: 2px solid gray;
+        padding: 5px;
+    }
+}
+
+#producto1,#producto2,#producto3,
+#producto4,#producto5,#producto6,
+#producto7,#producto8,#producto9,
+#producto10,#producto11,#producto12{
+  display: flex;
+}
+
+.imgAlterada figure img{
+    width: 85%;
+}
+.imgAlterada div p{
+    margin-top: 15px;
+}

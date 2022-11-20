@@ -1,0 +1,203 @@
+.button {
+    display: inline-block;
+    @include width-height(50px,20px);
+    margin-top: 18px;
+    background-color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+   
+#toggle {
+    display: none;
+}
+
+.slider {
+    display: block;
+    font-size: 10px;
+    position: relative;
+}
+
+.slider::after {
+    content: 'ON';
+    @include width-height(25px,25px);
+    background-color: $color-3;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+    position: absolute;
+    top: -5px;
+    left: 0;
+    display: grid;
+    place-content: center;
+    line-height: 0;
+    transition: background-color .25s, transform .25s ease-in;
+    }
+#toggle:checked + .slider::after {
+    content: 'OFF';
+    background-color: $color-3;
+    transform: translateX(25px) rotate(360deg);
+}
+
+
+
+
+.textInputWrapper {
+    position: relative;
+    @include width-height(180px,auto);
+    width: 180px;
+    margin: 8px auto;
+    margin-right: 10px;
+    --accent-color: $color-3;
+  }
+  
+.textInputWrapper:before {
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.textInputWrapper:before,
+.textInputWrapper:after {
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    pointer-events: none;
+    bottom: -1px;
+    z-index: 4;
+    width: 100%;
+}
+
+.textInputWrapper:focus-within:before {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.textInputWrapper:before {
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.textInputWrapper:focus-within:before {
+    border-bottom: 1px solid var(--accent-color);
+    transform: scaleX(1);
+}
+
+.textInputWrapper:focus-within:after {
+    border-bottom: 2px solid var(--accent-color);
+    transform: scaleX(1);
+}
+
+.textInputWrapper:after {
+    content: "";
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    will-change: transform;
+    border-bottom: 2px solid var(--accent-color);
+    border-bottom-color: var(--accent-color);
+}
+
+.textInput::placeholder {
+    transition: opacity 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    opacity: 1;
+    user-select: none;
+    color: rgba(255, 255, 255, 0.582);
+}
+
+.textInputWrapper .textInput {
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 2px 5px rgba(35, 35, 35, 0.3);
+    max-height: 36px;
+    background-color: #252525;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 200ms;
+    transition-property: background-color;
+    color: #e8e8e8;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px;
+    width: 100%;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+    outline: none;
+}
+
+.textInputWrapper:focus-within .textInput,
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+    background-color: $fondo-1;
+}
+
+.textInputWrapper:focus-within .textInput::placeholder {
+    opacity: 0;
+}
+/*-----------------------FINAL: HEADEAR-----------------------*/
+
+/*-----------------------INICIO: ButtonFOOTER-----------------------*/
+.buttonContactoFooter {
+    /* Variables */
+   --button_radius: 0.75em;
+   --button_color: #333;
+   --button_outline_color: #000000;
+   font-size: 17px;
+   font-weight: bold;
+   border: none;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+  }
+  
+  .buttonContactoFooter a:link, a:visited, a:active {
+    text-decoration:none;
+    color: $color-3;
+  }
+  
+  
+  .button_top {
+   display: block;
+   box-sizing: border-box;
+   border: 2px solid var(--button_outline_color);
+   border-radius: var(--button_radius);
+   padding: 0.75em 1.5em;
+   background: var(--button_color);
+   color: var(--button_outline_color);
+   transform: translateY(-0.2em);
+   transition: transform 0.1s ease;
+  }
+  
+  .buttonContactoFooter:hover .button_top {
+   transform: translateY(-0.33em);
+  }
+  
+  .buttonContactoFooter:active .button_top {
+   transform: translateY(0);
+  }
+/*-----------------------FINAL: ButtonFOOTER-----------------------*/
+/*-----------------------INICIO: ButtonPRODUCTOS-----------------------*/
+.buttonProductos {
+    color: $color-4;
+    
+    padding: 8px 4px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #c5c5c5;
+    transition: all .3s;
+   }
+   
+   .buttonProductos:hover {
+    box-shadow: 3px 3px 12px #AB966F,
+                -3px -3px 12px #AB966F;
+   }
+   
+   .buttonProductos:active {
+    box-shadow: 3px 3px 12px #c5c5c5,
+                -3px -3px 12px #ffffff;
+   }
+/*-----------------------FINAL: ButtonPRODUCTOS-----------------------*/
+
+

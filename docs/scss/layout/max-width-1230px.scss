@@ -1,0 +1,99 @@
+@media (max-width: 1230px){
+    /*---------- IN: HEADER ----------*/
+    .navL{
+        font-size: 15px;
+    }
+    .menu-horizontal > li > a{
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .navR{
+        font-size: 15px;
+    }
+    .menu-horizontal > li > a{
+        padding: 15px;
+    }
+    /*---------- FN: HEADER ----------*/
+
+
+
+    /*---------- FN: FOOTER ----------*/
+    .footer{
+        display: grid;
+        grid-template-rows: 2;
+        grid-template-columns: 30% 70% ;
+        grid-template-areas: 
+        "redesSociales  otrosJuegos "
+        "contacto contacto";
+    }
+
+    .otrosJuegosFooter{
+        grid-area: otrosJuegos;
+        justify-self: center;
+    }    
+
+    .contactoFooter{
+        width: 93%;
+    }
+    /*---------- FN: FOOTER ----------*/
+
+
+    /*---------- IN: INICIO ----------*/
+    .card{
+        width: 150px;
+        height: 225px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+    .card:hover p {
+        transform: scale(1.2);
+        color: #f8f9fa;
+    }
+    /*---------- FN: INICIO ----------*/
+
+
+    /*---------- IN: CLASES ----------*/
+    .contenedorFondo, .contenedorFondoColumna, .contenidoJefes p{
+        font-size: 18px;
+    }
+    .titulos, .subTitulos{
+        font-size: 35px;
+    }
+
+    .videos{
+        height: 400px;
+    }
+    /*---------- FN: CLASES ----------*/
+
+    /*---------- IN: ESCENARIOS ----------*/
+    #selectorEscenario1 {
+        height: 4%;
+        width: 12%;
+        top: 90%;
+        left: 69%;
+    }
+    #selectorEscenario2 {
+        height: 5%;
+        width: 8.8%;
+        top: 58%;
+        left: 87.8%;
+    }
+    #selectorEscenario3 {
+        height: 5%;
+        width: 8.3%;
+        top: 10.5%;
+        left: 34%;
+    }
+
+    #selectorEscenario4 {
+        /* border: 1px solid yellow; */
+        border-radius: 50%;
+        height: 5%;
+        width: 9.5%;
+        top: 7%;
+        left: 10.5%;
+    }
+
+    /*---------- FN: ESCENARIOS ----------*/  
+}
